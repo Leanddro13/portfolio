@@ -10,7 +10,7 @@ let theme = createTheme({
         },
     },
     typography: {
-        fontFamily: "Helvetica Neue"
+        fontFamily: `'Inter', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif`,
     }
 });
 

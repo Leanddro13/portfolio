@@ -1,4 +1,4 @@
-import { Box, Container, Grid, styled, Typography } from "@mui/material"
+import { Container, Grid, styled, Typography } from "@mui/material"
 import Avatar from "../../../../assets/images/avatar.jpg"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
@@ -14,7 +14,7 @@ const StyledHero = styled("div")(({theme}) => ({
 const StyledImg = styled("img")(() => ({
     width: "80%",
     maxwidth: 300,
-    borderRadius: "50%",
+    borderRadius: "8%",
     display: "block",
     margin: "0 auto"
 
@@ -24,15 +24,15 @@ const Hero = () => {
     return (
         <StyledHero>
             <Container maxWidth="lg">
-                <Grid container spacing={2} alignItems="center">
-                    <Grid item size = {{ xs: 12, md: 5}}>
+                <Grid container spacing={2} alignItems="center" justifyContent="flex-start">
+                    <Grid item size = {{ xs: 12, md: 3}}>
                         <StyledImg src={Avatar} alt="Avatar"/>
                     </Grid>
-                    <Grid item size = {{ xs: 12, md: 7}}>
-                        <Typography color="primary.contrastText" variant="h1" textAlign="center">Leandro Silva</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">Software Engineer</Typography>
+                    <Grid item size = {{ xs: 12, md: 6}}>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="left">Leandro Silva</Typography>
+                        <Typography color="primary.contrastText" variant="h4" textAlign="left">Software Engineer</Typography>
 
-                        <Grid container display="flex" justifyContent="center" spacing={3}>
+                        <Grid container display="flex" justifyContent="flex-start" spacing={3}>
                             <Grid item size = {{ xs: 12, md: 4}} display="flex" justifyContent="center">
                                 <StyledButton>
                                     <DownloadIcon/> <Typography>Download CV</Typography>
